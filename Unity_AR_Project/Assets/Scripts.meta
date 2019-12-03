@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 87f601e337849974a850330d79128090
 folderAsset: yes
 DefaultImporter:
-  externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+externalObjects: {}
+guid: 9138eb6311073824780ec65ee2e3beb8
+folderAsset: yes
+timeCreated: 1457459534
+licenseType: Pro
+DefaultImporter:
+userData: 
+assetBundleName: 
+assetBundleVariant: 
