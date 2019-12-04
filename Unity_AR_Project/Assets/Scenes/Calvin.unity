@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 6824506574826311743, guid: 06753361171c5dc40bbf64e2d607e894,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.55
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 6824506574826311743, guid: 06753361171c5dc40bbf64e2d607e894,
         type: 3}
@@ -440,6 +440,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855154730327463467, guid: 06753361171c5dc40bbf64e2d607e894,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreateAzureAnchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855154730327463467, guid: 06753361171c5dc40bbf64e2d607e894,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855154731062600776, guid: 06753361171c5dc40bbf64e2d607e894,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartAzureSession
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06753361171c5dc40bbf64e2d607e894, type: 3}
@@ -880,7 +895,7 @@ GameObject:
   - component: {fileID: 1765025711}
   - component: {fileID: 1765025710}
   m_Layer: 0
-  m_Name: MixedRealityPlayspace
+  m_Name: SharedPlayspace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

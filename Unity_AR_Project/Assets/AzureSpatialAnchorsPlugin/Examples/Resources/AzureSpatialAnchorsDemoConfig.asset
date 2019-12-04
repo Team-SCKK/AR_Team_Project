@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b0089a7785abf4f908eb77852f8a71, type: 3}
   m_Name: AzureSpatialAnchorsDemoConfig
   m_EditorClassIdentifier: 
-  SpatialAnchorsAccountId: 
-  SpatialAnchorsAccountKey: 
+  SpatialAnchorsAccountId: 8dc8f9f0-c7fc-4ef5-8deb-229dc43c9f1b
+  SpatialAnchorsAccountKey: EVrC7WPIIZbFcqP4iFRJvpzNrxlVhDR0avVGjFYX/Iw=
   BaseSharingURL: 
