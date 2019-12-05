@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 3931482119353917283}
   - component: {fileID: 7377621287430398451}
   - component: {fileID: 8278193559831112882}
+  - component: {fileID: -9105274771364203086}
   m_Layer: 0
   m_Name: Tree_Prefab
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,3 +238,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
+--- !u!65 &-9105274771364203086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784145537115007943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4948366, y: 2.494837, z: 5.251274}
+  m_Center: {x: -0.0000000909467, y: -0.00000015772592, z: -1.6256365}
