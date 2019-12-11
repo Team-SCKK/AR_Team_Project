@@ -45,7 +45,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999982763018940528}
-  - component: {fileID: 1999982763018940531}
+  - component: {fileID: 1579022233}
+  - component: {fileID: 1579022234}
   m_Layer: 0
   m_Name: MenuPrefab 1
   m_TagString: Untagged
@@ -68,7 +69,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1999982763018940531
+--- !u!114 &1579022233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,10 +78,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 1999982763018940529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6b6b195eff3b5e448973538a624c029, type: 3}
+  m_Script: {fileID: 11500000, guid: 4684083f6dff4a1d8a790bccc354fcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  updateLinkedTransform: 0
+  moveLerpTime: 0.1
+  rotateLerpTime: 0.1
+  scaleLerpTime: 0
+  maintainScale: 1
+  smoothing: 1
+  lifetime: 0
+  referenceDirection: 1
+  minDistance: 1
+  maxDistance: 2
+  minViewDegrees: 0
+  maxViewDegrees: 30
+  aspectV: 1
+  ignoreAngleClamp: 0
+  ignoreDistanceClamp: 0
+  useFixedVerticalPosition: 0
+  fixedVerticalPosition: -0.4
+  orientToReferenceDirection: 0
+--- !u!114 &1579022234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999982763018940529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedTargetType: 0
+  trackedHandness: 3
+  trackedHandJoint: 2
+  transformOverride: {fileID: 0}
+  additionalOffset: {x: 0, y: -0.4, z: 0}
+  additionalRotation: {x: 0, y: 0, z: 0}
+  updateSolvers: 1
 --- !u!1 &1999982763318575296
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 7694674565675066071, guid: d2c1816fd7f04ab468edf82180ef6fd9, type: 3}
+  itemName: rock_prefab
 --- !u!114 &1999982763318575358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 100000, guid: bac14327a1aeaa2478f942d793f52b12, type: 3}
+  itemName: Santa-Hat
 --- !u!114 &1999982763452272628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 4784145537115007943, guid: edf7db6bc2b14304fa0669a9192a2352, type: 3}
+  itemName: Tree_Prefab
 --- !u!114 &1999982764121726055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 8507463766780801444, guid: a48c7aec13d87934a9962a5d8b040c75, type: 3}
+  itemName: Sphere_Prefab
 --- !u!114 &1999982764444837474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,6 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 100004, guid: cd3a6a05b35c3aa4ba89adbcd9f7cc32, type: 3}
+  itemName: Present-01
 --- !u!114 &1999982764476839985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,7 +955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b6b195eff3b5e448973538a624c029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: -927199367670048503, guid: 882962d113a97cd479c7a28c36c66190, type: 3}
+  item: {fileID: 8476142141783242104, guid: 1469f99053b4d6c4b8b6009d19e4bb6d, type: 3}
+  itemName: Carrot_Prefab
 --- !u!114 &1999982764541706964
 MonoBehaviour:
   m_ObjectHideFlags: 0
