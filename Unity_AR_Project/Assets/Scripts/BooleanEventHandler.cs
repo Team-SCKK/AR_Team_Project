@@ -21,6 +21,14 @@ public class BooleanEventHandler : MonoBehaviour
 
     public void ToggleBoolean()
     {
-        toggle = false ? true : false;
+        if(toggle)
+        {
+            toggle = false;
+            OnFalse();
+        } else
+        {
+            toggle = true;
+            OnTrue();
+        }
     }
 }
