@@ -8,6 +8,7 @@ public class VoiceCommand : MonoBehaviour
 {
 
     public GameObject MenuPrefab;
+    public GameObject AzureMenu;
     KeywordRecognizer keywordRecognizer;
     Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 
@@ -29,7 +30,15 @@ public class VoiceCommand : MonoBehaviour
             MenuPrefab.SetActive(false);
 
         });
-        
+        keywords.Add("Open Settings", () =>
+        {
+            AzureMenu.SetActive(true);
+        });
+        keywords.Add("Close Settings", () =>
+        {
+            AzureMenu.SetActive(false);
+        });
+
 
         keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
